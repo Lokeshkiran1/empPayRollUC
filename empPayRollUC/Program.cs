@@ -16,19 +16,14 @@ namespace empPayRollUC
             switch (option)
             {
                 case 1:
-                    {
                         EmpAttendenceCheck.EmpAtt();
                         break;
-                    }
                 case 2:
-                    {
                         DailyWage.DailyWageCalculation();
                         break;
-                    }
                 default:
-                    {
-                        break;
-                   }            
+                        Console.WriteLine("entered wrong option");
+                        break;           
             }
 
         }
