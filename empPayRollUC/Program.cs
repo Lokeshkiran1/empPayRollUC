@@ -10,7 +10,27 @@ namespace empPayRollUC
     {
         static void Main(string[] args)
         {
-            EmpAttendenceCheck.EmpAtt();
+            Console.WriteLine("welcome to employee wage computation");
+            Console.WriteLine("choose option\n 1. check Attendence\n 2. DailyWage");
+            int option = Convert.ToInt32(Console.ReadLine());
+            switch (option)
+            {
+                case 1:
+                    {
+                        EmpAttendenceCheck.EmpAtt();
+                        break;
+                    }
+                case 2:
+                    {
+                        DailyWage.DailyWageCalculation();
+                        break;
+                    }
+                default:
+                    {
+                        break;
+                   }            
+            }
+
         }
     }
 }
