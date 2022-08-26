@@ -11,7 +11,7 @@ namespace empPayRollUC
         static void Main(string[] args)
         {
             Console.WriteLine("welcome to employee wage computation");
-            Console.WriteLine("choose option\n 1. check Attendence\n 2. DailyWage\n 3. Part & Full Time wage ");
+            Console.WriteLine("choose option\n 1. check Attendence\n 2. DailyWage\n 3. Part & Full Time wage\n 4. Monthly Wage ");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -23,6 +23,9 @@ namespace empPayRollUC
                         break;
                 case 3:
                     PartTimeFullTimeWage.CalculateFullPartTimeWage();
+                    break;
+                case 4:
+                    MonthlyWage.CalculateWageForMonth();
                     break;
 
                 default:
