@@ -47,6 +47,7 @@
     <Compile Include="EmpAttendenceCheck.cs" />
     <Compile Include="EmpWageFullPartTimeSwitch.cs" />
     <Compile Include="empWageMaxCondition.cs" />
+    <Compile Include="EmpWageMultipleCompanies.cs" />
     <Compile Include="MonthlyWage.cs" />
     <Compile Include="PartTimeFullTimeWage.cs" />
     <Compile Include="Program.cs" />

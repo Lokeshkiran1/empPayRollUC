@@ -11,7 +11,7 @@ namespace empPayRollUC
         static void Main(string[] args)
         {
             Console.WriteLine("welcome to employee wage computation");
-            Console.WriteLine("choose option\n 1. check Attendence\n 2. DailyWage\n 3. Part & Full Time wage\n 4. Monthly Wage\n 5. total employee salary with max days 20 and max hours 100\n6.Refactor method to compute employee wage ");
+            Console.WriteLine("choose option\n1.check Attendence\n2.DailyWage\n3.Part & Full Time wage\n4.Monthly Wage\n5.total employee salary with max days 20 and max hours 100\n6.Refactor method to compute employee wage\n7.Refactor method to compute empWage\n8.Employee Wage for multiple companies");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -28,12 +28,21 @@ namespace empPayRollUC
                     MonthlyWage.CalculateWageForMonth();
                     break;
                 case 5:
-                    empWageMaxCondition.CalculateEmpWageWhile();
+                    EmpWageFullPartTimeSwitch.CalculateFullPartTimeWageSwitch();                    
                     break;
                 case 6:
-                    int wage=RefactorMethodToComputeEmpWage.computeEmpWage();
-                    Console.WriteLine("total monthly wage: "+wage);
+                    empWageMaxCondition.CalculateEmpWageWhile();
                     break;
+                case 7:
+                    int wage = RefactorMethodToComputeEmpWage.computeEmpWage();
+                    Console.WriteLine("total monthly wage" + wage);
+                    break;
+                case 8:
+                    EmpWageMultipleCompanies.computeEmpWage("Bell", 20, 20, 100);
+                    EmpWageMultipleCompanies.computeEmpWage("Infosis", 20, 22, 110);
+                    break;
+
+
 
                 default:
                         Console.WriteLine("entered wrong option");
