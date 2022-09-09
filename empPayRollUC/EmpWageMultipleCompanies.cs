@@ -37,5 +37,6 @@ namespace empPayRollUC
             Console.WriteLine("Total Monthly Salary of company: "+company+" is "+totalEmpWage);
             return totalEmpWage;
         }
+        
     }
 }
