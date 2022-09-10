@@ -11,12 +11,13 @@ namespace empPayRollUC
     {
         public const int IS_PART_TIME = 1;
         public const int IS_FULL_TIME = 2;
-        public int totalEmpWage = 0;
+        
 
         private string company;
         private int empRatePerHour;
         private int numOfWorkingDays;
         private int maxHoursPerMonth;
+        private int totalEmpWage = 0;
         public AbilityToSaveWageforEachCompany(string company, int empRatePerHour, int numOfWorkingDays, int maxHoursPerMonth)
         {
             this.company = company;
@@ -53,7 +54,7 @@ namespace empPayRollUC
         }
         public string toString()
         {
-            return "Total Emp Wage for company: " + this.company + " is " + totalEmpWage;
+            return "Total Emp Wage for company: " + this.company + " is " + this.totalEmpWage;
         }
     }
 }

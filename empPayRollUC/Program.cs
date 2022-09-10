@@ -11,7 +11,10 @@ namespace empPayRollUC
         static void Main(string[] args)
         {
             Console.WriteLine("welcome to employee wage computation");
-            Console.WriteLine("choose option\n1.check Attendence\n2.DailyWage\n3.Part & Full Time wage\n4.Monthly Wage\n5.total employee salary with max days 20 and max hours 100\n6.Refactor method to compute employee wage\n7.Refactor method to compute empWage\n8.Employee Wage for multiple companies\n9.Ability to save wage for each company");
+            Console.WriteLine("choose option\n1.check Attendence\n2.DailyWage\n3.Part & Full Time wage\n4.Monthly Wage\n" +
+                "5.total employee salary with max days 20 and max hours 100\n6.Refactor method to compute employee wage\n" +
+                "7.Refactor method to compute empWage\n8.Employee Wage for multiple companies\n9.Ability to save wage for each company\n" +
+                "10.Ability to manage employee wage for multiple companies");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -51,7 +54,12 @@ namespace empPayRollUC
 
                     break;
 
-
+                case 10:
+                    AbilityToManageEmployeeWageMultipleCompanies abilityToManageEmployeeWageMultipleCompanies = new AbilityToManageEmployeeWageMultipleCompanies();
+                    abilityToManageEmployeeWageMultipleCompanies.addCompanyEmpWage("DMart", 20, 20, 100);
+                    abilityToManageEmployeeWageMultipleCompanies.addCompanyEmpWage("Infosis", 15, 20, 100);
+                    abilityToManageEmployeeWageMultipleCompanies.computeEmpWage();
+                    break;
 
 
                 default:

@@ -43,7 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbilityToManageEmployeeWageMultipleCompanies.cs" />
     <Compile Include="AbilityToSaveWageforEachCompany.cs" />
+    <Compile Include="CompanyEmpWage.cs" />
     <Compile Include="DailyWage.cs" />
     <Compile Include="EmpAttendenceCheck.cs" />
     <Compile Include="EmpWageFullPartTimeSwitch.cs" />
